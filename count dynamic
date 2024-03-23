@@ -1,0 +1,9 @@
+A1 = a          B1 = null
+A2 = null       B2 = a
+A3 = null       B3 = a
+A4 = a          B4 = null
+
+--- get numbnerning dynamic row in column C
+C1=IF(B1="","",1)
+C2=IF(B2="","",IF(B1="",1,C1+1))
+
